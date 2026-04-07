@@ -1,0 +1,5 @@
+tensorflow>=2.16.1
+tensorflowjs>=4.17.0
+numpy>=1.26.0
+requests>=2.28.0
+tqdm>=4.64.0
