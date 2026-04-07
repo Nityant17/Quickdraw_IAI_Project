@@ -1,6 +1,6 @@
 # AI Pictionary 🎨
 
-An authentic, real-time sketching game powered by **Convolutional Neural Networks (CNNs)**. This project was developed as part of the **Microsoft AI Unlocked Hackathon**, where it reached the **Top 50**. It uses a custom-trained model on the Google QuickDraw dataset to recognize hand-drawn doodles instantly in the browser.
+An authentic, real-time sketching game powered by **Convolutional Neural Networks (CNNs)**. It uses a custom-trained model on the Google QuickDraw dataset to recognize hand-drawn doodles instantly in the browser.
 
 ---
 
@@ -74,8 +74,3 @@ Navigate to `http://localhost:8000`. **Note:** Use `Ctrl+Shift+R` to force a har
 | **Hardware Used** | NVIDIA GeForce RTX 4060 Laptop GPU (8GB VRAM) |
 | **Preprocessing** | 0-255 `uint8` to `float32` Rescaling inside the model graph |
 
----
-
-## 🏆 Accomplishments
-* **Top 50 Finalist** - Microsoft AI Unlocked Hackathon.
-* **Top 15 Finalist** - NCIIPC Startup India AI Grand Challenge.
