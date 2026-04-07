@@ -1,9 +1,6 @@
-arc
 .venv
 best_model.keras
-complete_data/
 data/
-downloader.py
 logs/
 quickdraw_model.keras
 quickdraw_model_classes.json
