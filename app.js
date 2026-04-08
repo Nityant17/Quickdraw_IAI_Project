@@ -51,6 +51,9 @@ class QuickDrawApp {
     }
 
     startDrawing(e) {
+        // NEW: Prevent the player from starting a new line if time is up
+        if (this.timeLeft <= 0) return;
+
         this.isDrawing = true;
         const coords = this.getCoordinates(e);
         this.ctx.beginPath();
@@ -95,6 +98,8 @@ class QuickDrawApp {
             document.getElementById('timer').textContent = `${this.timeLeft}s`;
             if (this.timeLeft <= 0) {
                 clearInterval(this.timerInterval);
+                // NEW: Force stop drawing if time runs out while the pen is still down
+                this.isDrawing = false;
                 this.predict();
             }
         }, 1000);
@@ -111,33 +116,6 @@ class QuickDrawApp {
         }
     }
 
-    // preprocessCanvas() {
-    //     const imageData = this.ctx.getImageData(0, 0, this.canvas.width, this.canvas.height);
-    //     const data = imageData.data;
-    //     const size = 28;
-    //     const processed = new Array(size * size).fill(0);
-    //     const scaleX = this.canvas.width / size;
-    //     const scaleY = this.canvas.height / size;
-        
-    //     for (let y = 0; y < size; y++) {
-    //         for (let x = 0; x < size; x++) {
-    //             let sum = 0;
-    //             let count = 0;
-    //             for (let dy = 0; dy < scaleY; dy++) {
-    //                 for (let dx = 0; dx < scaleX; dx++) {
-    //                     const sx = Math.floor(x * scaleX + dx);
-    //                     const sy = Math.floor(y * scaleY + dy);
-    //                     const idx = (sy * this.canvas.width + sx) * 4;
-    //                     const gray = 255 - (data[idx] + data[idx + 1] + data[idx + 2]) / 3;
-    //                     sum += gray;
-    //                     count++;
-    //                 }
-    //             }
-    //             processed[y * size + x] = sum / count;
-    //         }
-    //     }
-    //     return processed;
-    // }
     preprocessCanvas() {
         const size = 28;
         const tempCanvas = document.createElement('canvas');
