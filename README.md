@@ -2,6 +2,8 @@
 
 An authentic, real-time sketching game powered by **Convolutional Neural Networks (CNNs)**. It uses a custom-trained model on the Google QuickDraw dataset to recognize hand-drawn doodles instantly in the browser.
 
+Try it: https://nityant17.github.io/Quickdraw_IAI_Project/
+
 ---
 
 ## 🚀 Key Features
