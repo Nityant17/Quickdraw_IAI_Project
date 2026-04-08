@@ -14,7 +14,7 @@ An authentic, real-time sketching game powered by **Convolutional Neural Network
 
 [Sanjai G]()
 
-[Shrey Nagpatney]()
+[Shrey Nagpatney](https://github.com/Quantm56)
 
 [Chinmay Vyas]()
 
