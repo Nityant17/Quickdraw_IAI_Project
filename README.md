@@ -12,7 +12,7 @@ An authentic, real-time sketching game powered by **Convolutional Neural Network
 
 [Akshat Richarya](https://github.com/oneSevenAR)
 
-[Sanjai G]()
+[Sanjai G](https://github.com/imperi0)
 
 [Shrey Nagpatney](https://github.com/Quantm56)
 
